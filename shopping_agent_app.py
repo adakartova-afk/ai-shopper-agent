@@ -48,7 +48,7 @@ _ANTHROPIC_AVAILABLE = False
 class AgentConfig:
 # -- Bright Data -----------------------------------------------------------
 brd_customer: str = field(default_factory=lambda: os.environ.get("BRD_CUSTOMER", ""))
-brd_zone: str = field(default_factory=lambda: os.environ.get("BRD_ZONE", "scraping_b
+brd_zone: str      = field(default_factory=lambda: os.environ.get("BRD_ZONE", "scraping_browser1"))
 brd_password: str = field(default_factory=lambda: os.environ.get("BRD_PASSWORD", ""))
 # -- Target store ----------------------------------------------------------
 base_url: str = "https://books.toscrape.com"
