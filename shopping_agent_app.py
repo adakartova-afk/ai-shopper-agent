@@ -52,7 +52,7 @@ brd_zone: str      = field(default_factory=lambda: os.environ.get("BRD_ZONE", "s
 brd_password: str = field(default_factory=lambda: os.environ.get("BRD_PASSWORD", ""))
 # -- Target store ----------------------------------------------------------
 base_url: str = "https://books.toscrape.com"
-search_query: str = field(default_factory=lambda: os.environ.get("SEARCH_QUERY", "myster
+search_query: str  = field(default_factory=lambda: os.environ.get("SEARCH_QUERY", "mystery"))
 # -- Browser ---------------------------------------------------------------
 headless: bool = field(default_factory=lambda: os.environ.get("HEADLESS", "true").low
 # -- Timeouts (ms) ---------------------------------------------------------
